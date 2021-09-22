@@ -26,17 +26,17 @@ class App extends Component {
   }
 
   increment20 = () => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       this.setState({ count: this.state.count + 20});
     }, 2000);
-    return () => clearInterval(setInterval);
+    return () => clearInterval(interval);
   }
 
   increment30 = () => {
-    setInterval(() => {
+    const interval = setInterval(() => {
       this.setState({ count: this.state.count + 20});
     }, 4000);
-    return () => clearInterval(setInterval);
+    return () => clearInterval(interval);
   }
 
   render() {
