@@ -85,7 +85,7 @@ class App extends Component {
           data-background-color='#B77234'>
           <button  disabled={this.state.count < 5000} 
             className="btn" onTouchStart={() => { ReactTooltip.show(this.fooRef) }} 
-            onClick={ this.increment10}>
+            onClick={ this.increment30}>
             <img className="icon" src={icon3} alt="iconcookie" />
             <p className="btn-text"> +30 IN 4 SEC </p>
           </button>      
